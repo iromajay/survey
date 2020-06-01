@@ -28,6 +28,8 @@ $passTypes= ArrayHelper::map(PassType::find()->all(),'id','pass_type');
 </div>
 <div class="col-lg-12" style="text-align: center;"><h3 style="color: #b2acfa"><b>Apply for Digital-Pass</b></h3></div>
 <br><br><br><br><br><br><br><br><br>
+<div class="row">
+    
 
 <div class="panel panel-default col-lg-12" style="padding: 30px;">
 
@@ -74,7 +76,7 @@ $passTypes= ArrayHelper::map(PassType::find()->all(),'id','pass_type');
     </div>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Submit', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

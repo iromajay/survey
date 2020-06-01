@@ -33,7 +33,7 @@ class Passenger extends \yii\db\ActiveRecord
             [['name', 'gender', 'dob', 'mobile_no', 'aadhar_no'], 'required'],
             [['gender'], 'string'],
             [['dob'], 'safe'],
-            [['mobile_no'], 'integer','message'=>'Please enter valid mobie number'],
+            [['mobile_no'], 'string','max'=>10],
             [['aadhar_no'],'string','max'=>12],
             [['name'], 'string', 'max' => 255],
             [['travel_info'],'safe']

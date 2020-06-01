@@ -37,8 +37,8 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Admin Login', 'url' => ['/site/login']],
-        ['label' => 'E-pass registration', 'url' => ['/travel-info/create']],
-        ['label' => 'Track Status', 'url' => ['/track-status/status']],
+        // ['label' => 'E-pass registration', 'url' => ['/travel-info/create']],
+        // ['label' => 'Track Status', 'url' => ['/track-status/status']],
     ];
     
     echo Nav::widget([
