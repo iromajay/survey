@@ -1,0 +1,19 @@
+body{
+	color: green;
+	text-align: left;
+}
+.container{
+	display: inline-flex;
+	flex-direction: column;
+	/*grid-template-columns: 1fr 1fr;*/
+}
+span{
+	margin-left: 20%;
+}
+table{
+	margin-left: 35%;
+	width: 100%;
+}
+td{
+	color: black !important;
+}
