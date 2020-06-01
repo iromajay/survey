@@ -36,6 +36,7 @@ class Passenger extends \yii\db\ActiveRecord
             [['mobile_no'], 'string','max'=>10],
             [['aadhar_no'],'string','max'=>12],
             [['name'], 'string', 'max' => 255],
+            [['address'], 'string', 'max' => 255],
             [['travel_info'],'safe']
         ];
     }
@@ -52,6 +53,7 @@ class Passenger extends \yii\db\ActiveRecord
             'dob' => 'Dob',
             'mobile_no' => 'Mobile No',
             'aadhar_no' => 'Aadhar No',
+            'address' => 'Address',
         ];
     }
 }

@@ -45,7 +45,9 @@ $this->title ="Approval";
                     return $passenger->dob;
                }
             ],
-           'mobile_no'
+           'mobile_no',
+           'address',
+
         ],
 
     ]) ?>
@@ -103,7 +105,7 @@ $this->title ="Approval";
         
         
     <?php if($model->registration_image_file) { ?>
-           <div class='col-md-3'>
+           <div class='col-md-6'>
             <?php
             echo "<b>Registration Proof:</b>";
             ?>

@@ -80,6 +80,9 @@ $this->title = "E-pass Application";
         <td>Date of Birth</td><td><?= date("d-m-Y",strtotime($passenger->dob)) ?></td>
     </tr>
     <tr>
+        <td>Address</td><td><?= $passenger->address ?></td>
+    </tr>
+    <tr>
         <td>Token</td><td><?= $model->token ?></td>
     </tr>
     <tr>

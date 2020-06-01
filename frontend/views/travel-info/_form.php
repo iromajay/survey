@@ -24,12 +24,10 @@ $passTypes= ArrayHelper::map(PassType::find()->all(),'id','pass_type');
 // $vehicle_types= ArrayHelper::map(VehicleType::find()->all(),'id','name');
 ?>
 <div class="col-lg-12" style="text-align: center;">
-    <a href="<?= Url::to(['track-status/status']) ?>" class="btn btn-primary btn-lg butn" ><b class="glyphicon glyphicon-log-in "> Check-Status</b></a>
+    <a href="index.php?r=site/login" class="btn btn-primary btn-lg butn" ><b class="glyphicon glyphicon-log-in "> Track-Status</b></a>
 </div>
 <div class="col-lg-12" style="text-align: center;"><h3 style="color: #b2acfa"><b>Apply for Digital-Pass</b></h3></div>
 <br><br><br><br><br><br><br><br><br>
-<div class="row">
-    
 
 <div class="panel panel-default col-lg-12" style="padding: 30px;">
 
@@ -62,7 +60,7 @@ $passTypes= ArrayHelper::map(PassType::find()->all(),'id','pass_type');
             [1=>"Male",2=>"Female",3=>'Other'],
             ['prompt'=>'Select Gender']
             ); ?>   
-
+    <?= $form->field($passenger, 'address')->textArea(['maxlength' => true]) ?>
 
 
     <div id="company" class="hide">
@@ -112,4 +110,7 @@ $passTypes= ArrayHelper::map(PassType::find()->all(),'id','pass_type');
     .hide {
         display: none;
     }
+     .butn {
+            box-shadow: 5px 5px 5px grey;
+        }
 </style>

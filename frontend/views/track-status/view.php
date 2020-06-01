@@ -39,13 +39,13 @@ $this->title = $model->epass_id;
                         return $passenger->aadhar_no;
                    }
                 ],
-                            [
+                [
                     'label' => "Date of birth",
                    'value' =>function($passenger) {
                         return $passenger->dob;
                    }
                 ],
-               
+                'address',
             ],
 
         ]) ?>

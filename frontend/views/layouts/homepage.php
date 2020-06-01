@@ -32,11 +32,11 @@ AppAsset::register($this);
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'my-navbar',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Admin Login', 'url' => ['/site/login']],
+        ['label' => 'Official Login', 'url' => ['/site/login']],
         // ['label' => 'E-pass registration', 'url' => ['/travel-info/create']],
         // ['label' => 'Track Status', 'url' => ['/track-status/status']],
     ];
@@ -70,3 +70,9 @@ AppAsset::register($this);
 </body>
 </html>
 <?php $this->endPage() ?>
+<style type="text/css">
+    .my-navbar{
+        background-color: #e7e6f2;
+    }
+    
+</style>
