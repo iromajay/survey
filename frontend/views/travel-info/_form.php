@@ -24,7 +24,7 @@ $passTypes= ArrayHelper::map(PassType::find()->all(),'id','pass_type');
 // $vehicle_types= ArrayHelper::map(VehicleType::find()->all(),'id','name');
 ?>
 <div class="col-lg-12" style="text-align: center;">
-    <a href="index.php?r=site/login" class="btn btn-primary btn-lg butn" ><b class="glyphicon glyphicon-log-in "> Track-Status</b></a>
+    <a href="<?= url::to(['track-status/status']) ?>" class="btn btn-primary btn-lg butn" ><b class="glyphicon glyphicon-log-in "> Track-Status</b></a>
 </div>
 <div class="col-lg-12" style="text-align: center;"><h3 style="color: #b2acfa"><b>Apply for Digital-Pass</b></h3></div>
 <br><br><br><br><br><br><br><br><br>
