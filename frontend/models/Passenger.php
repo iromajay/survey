@@ -19,6 +19,7 @@ class Passenger extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $test;
     public static function tableName()
     {
         return 'passenger';
