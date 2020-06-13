@@ -12,11 +12,14 @@ use app\models\Passenger;
 
 $this->title = 'Registrations';
 ?>
+?>
 <div class="raw">
     <div class="col-md-12" style="text-align: center;background-color: #cadfe3;padding: 20px;border-radius: 5px;">
         <h4><b>List of Applicants for E-Pass</b></h4>
     </div>
 </div>
+<?= Html::a('Setting', ['/admin/settings'], ['class'=>'btn btn-primary align']) ?>
+<br><br><br><br>
 <div class="travel-info-index">
 
     
@@ -88,9 +91,9 @@ $this->title = 'Registrations';
                 //     'buttons' => ['view' => function($url, $model) {
                 //         return Html::a('<span class="btnSpace btn btn-sm btn-success"><b class="fa fa-search-plus">Approve</b></span>', ['approve', 'id' => $model['id']], ['title' => 'Approve', 'data' => ['confirm' => 'Corfirmation, set status to "Approve"?', 'method' => 'post', ]]);
                 //     },
-                //     'update' => function($id, $model) {
-                //         return Html::a('<span class="btnSpace btn btn-sm btn-primary"><b class="fa fa-pencil">In progress</b></span>', ['inprogress', 'id' => $model['id']], ['title' => 'In progress', 'data' => ['confirm' => 'Corfirmation, set status to "in progress"?', 'method' => 'post', ]]);
-                //     },
+                    // 'update' => function($id, $model) {
+                    //     return Html::a('<span class="btnSpace btn btn-sm btn-primary"><b class="fa fa-pencil">In progress</b></span>', ['inprogress', 'id' => $model['id']], ['title' => 'In progress', 'data' => ['confirm' => 'Corfirmation, set status to "in progress"?', 'method' => 'post', ]]);
+                    // },
                 //     'delete' => function($url, $model) {
                 //         return Html::a('<span class="btnSpace btn btn-sm btn-danger"><b class="fa fa-trash">Decline</b></span>', ['decline', 'id' => $model['id']], ['title' => 'Decline', 'class' => '', 'data' => ['confirm' => 'Are you sure you want to decline?', 'method' => 'post', ]]);
                 //     }
@@ -113,5 +116,10 @@ $this->title = 'Registrations';
 <style type="text/css">
     .btnSpace {
         margin-right: 20px;
+    }
+    .align{
+        position: absolute;
+        top: 28%;
+        left:84%;
     }
 </style>
